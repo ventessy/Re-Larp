@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <audio id="bg-music" src="Rbd.mp3" preload="auto"></audio>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Re:Larp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="vignette" aria-hidden="true"></div>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <p class="kicker">from zero · again and again</p>
+    <h1>Re:<span>Larp</span></h1>
+    <p class="tagline">
+      A shrine to the people who dont know shi.
+    </p>
+    <head>
+      <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search characters..." onkeyup="filterCards()">
+</div>
+    </head>
+    <nav class="cast-nav" aria-label="Characters">
+      <a href="#subaru" style="--accent:#4ade80">Subaru</a>
+      <a href="#emilia" style="--accent:#c4b5fd">Emilia</a>
+      <a href="#rem" style="--accent:#60a5fa">Rem</a>
+      <a href="#ram" style="--accent:#f472b6">Ram</a>
+      <a href="#felt" style="--accent:#facc15">Felt</a>
+      <a href="#otto" style="--accent:#34d399">Otto</a>
+      <a href="#puck" style="--accent:#7dd3fc">Puck</a>
+      <a href="#garfiel" style="--accent:#7dd3fc">Garfiel</a>
+      <a href="#beatrice" style="--accent:#7dd3fc">Beatrice</a>
+      <a href="#roswaal" style="--accent:#7dd3fc">Roswaal</a>
+      <a href="#frederica" style="--accent:#7dd3fc">Frederica</a>
+      <a href="#petra" style="--accent:#7dd3fc">Petra</a>
+      <a href="#reinhard" style="--accent:#ef4444">Reinhard</a>
+      <a href="#crusch" style="--accent:#16a34a">Crusch</a>
+      <a href="#felix" style="--accent:#38bdf8">Felix</a>
+      <a href="#wilhelm" style="--accent:#94a3b8">Wilhelm</a>
+      <a href="#anastasia" style="--accent:#38bdf8">Anastasia</a>
+      <a href="#al" style="--accent:#ea580c">Al</a>
+      <a href="#julius" style="--accent:#a855f7">Julius</a>
+      <a href="#priscilla" style="--accent:#dc2626">Priscilla</a>
+      <a href="#elsa" style="--accent:#be123c">Elsa</a>
+      <a href="#rom" style="--accent:#b45309">Rom</a>
+    </nav>
+    <p class="hint">Enjoy ig, gimmie robux or sum.</p>
+  </header>
+<div class="season-bar">
+  <a href="season1.html" class="season-btn">Season 1</a>
+</div>
+<section id="season-1">
+  <main>
+    <article class="card" id="subaru" data-accent="#4ade80">
+      <button class="portrait" id="subaru-portrait" type="button" title="He truly is an amazing guy" aria-label="Play Subaru's theme">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ51ZIXbvWy68qv1JGRqZXzL2_vRzNMkPgdJTgq2wF7nA&s=10" alt="Natsuki Subaru" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Subaru</span>
+        <span class="play-chip">Auramonster</span>
+      </button>
+      <div class="bio">
+        <p class="role">Natsuki Subaru · Return by Death</p>
+        <h2>You truly are an amazing guy</h2>
+        <p>Subaru Natsuki is a deeply flawed but extraordinarily determined young man who repeatedly throws himself into impossible situations to protect the people he cares about. Beneath his loud, goofy, and sometimes reckless personality is someone who struggles with fear, guilt, loneliness, and his own sense of inadequacy. Yet, even after being broken down by failure, Subaru continually chooses to stand back up.</p>
+        <p>What makes Subaru truly remarkable isn't that he's fearless or naturally powerful — it's that he keeps moving forward despite being terrified. He learns from his mistakes, admits when he's wrong, and gradually becomes someone others can rely on. His greatest strength is his willingness to sacrifice his pride, ask for help, and put everything on the line for someone else.</p>
+        <p>The line “You truly are an amazing guy, Natsuki Subaru” captures what makes his character so powerful: Subaru doesn't become admirable because he's perfect. He becomes admirable because, despite believing he's weak, useless, or unworthy, he continues to reach out, protect others, and refuse to give up. His courage is found in the choice to keep trying when giving up would be far easier.</p>
+        <p>Natsuki Subaru is not a hero because he never breaks. He's a hero because, every time he breaks, he finds a reason to stand again.</p>
+      <h6><p>in Short: Subaru Natsuki is the protagonist of Re:Zero.</p>
+         Summoned from Earth, his unique ability Return by Death lets him rewind time to a “save point” every time he dies—retaining all memories.This is the story’s core: he alone can survive the impossible by dying, learning, and retrying, turning endless suffering into progress for himself and everyone around him (especially Emilia’s camp). Without it, the plot simply cannot move forward.</h6>
+      </div>
+    </article>
+
+    <article class="card" id="emilia" data-accent="#c4b5fd">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6eY6OQMF3HK0V9rXuV97gleXe_q89aRXkuQ5zVJE2Q&s=10" alt="Emilia" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Emilia</span>
+        <span class="play-chip emilia-chip">Main Heroine</span>
+      </div>
+      <div class="bio">
+        <p class="role">Emilia · Silver-haired half-elf</p>
+        <h2>Kindness that refuses to freeze</h2>
+        <li>Thinks kissing automatically gets someone pregnant</li>
+        <p>Emilia is one of the central characters of Re:Zero — a half-elf with silver hair, violet eyes, and a striking resemblance to the Witch of Envy, Satella. Because of this resemblance, she has spent much of her life being feared, judged, and misunderstood despite having done nothing to deserve it. Yet Emilia remains remarkably kind, compassionate, and determined to help others, even when doing so puts herself at risk.</p>
+        <p>What makes Emilia compelling is the contrast between her gentleness and inner strength. She can be sensitive, insecure, and emotionally vulnerable, but she is far from weak. When someone she cares about is threatened, her determination becomes incredibly strong. She carries a deep sense of responsibility and justice, wanting to become ruler not for power, but to create a world where people aren't rejected or abandoned because of who they are.</p>
+        <p>Her relationship with Subaru is important to her growth, especially because his unwavering belief in her helps her realize that she deserves to be accepted. However, Emilia isn't simply someone who needs to be saved — throughout the story, she develops her own confidence, independence, and understanding of herself.</p>
+        <p>At her core, Emilia is someone who has been given countless reasons to become bitter, yet continues choosing kindness. She is gentle without being powerless, vulnerable without lacking courage, and idealistic without losing her compassion. Her journey is ultimately about discovering who she truly is beneath the fear, prejudice, expectations, and mysteries surrounding her.</p>
+      <h6><p>In Short: Emilia is the main heroine of Re:Zero.</p> A silver-haired half-elf and royal selection candidate for the throne of Lugnica.She is the emotional and political center of the story: Subaru’s unwavering devotion to her drives almost every major decision he makes. Her resemblance to the Witch of Envy creates constant prejudice and danger, while her growth from insecure outsider into a true leader shapes the entire series’ direction and themes of acceptance, identity, and perseverance.</h6>
+      </div>
+    </article>
+
+    <article class="card" id="puck" style="--accent:#7dd3fc">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Kb2-6ikhCqrd28onUDlpRXpmRPukpHfkoUofhzMmQg&s=10" alt="Puck" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Puck</span>
+        <span class="play-chip puck-chip">Useless cuck</span>
+      </div>
+      
+      <div class="bio">
+        <p class="role">Puck · Artificial spirit · Emilia’s Lia</p>
+        <h2>Nine centimeters of apocalypse</h2>
+        <li>Rat</li>
+        <p>Puck is Emilia’s contracted spirit: a tiny grey cat with a gold earring, a little purple bag, and enough ice magic to freeze the world if he ever stopped pretending to be harmless. He calls Emilia “Lia,” treats her like a daughter, and spends his visible hours teasing Subaru, napping in someone’s hood, and acting like everything is under control.</p>
+        <p>What makes Puck interesting is the gap between the palm-sized cat and what he actually is. He is one of the Four Great Spirits, created centuries ago, and his true form is the Beast of the End — a colossal cat-shaped calamity that drains the heat from everything around him. The same creature that floats around cracking jokes can also decide that the world does not deserve to keep existing if Emilia is gone.</p>
+        <p>A contract only lets him stay manifested for part of the day, and just being present burns through Emilia’s mana. Even so, he is fiercely protective, surprisingly wise, and genuinely fond of the people Emilia cares about — once they stop looking like a threat to her.</p>
+        <p>At his core, Puck is a father, a weapon, and a punchline all at once. He is the small, warm presence at Emilia’s side, and the reminder that the gentlest-looking thing in Re:Zero can still be the end of everything.</p>
+      <h6><p>In Short:</p>Hes useless. all ts is yap. hes just useless asf</h6>
+      </div>
+    </article>
+
+    <article class="card" id="rem" data-accent="#60a5fa">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFoETdngYgI4nvpzfw1dCO0n2QkWfnk-r6euCQiDU7A&s=10" alt="Rem" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Rem</span>
+         <span class="play-chip rem-chip">Loyalty / devotion (to Subaru)</span>
+      </div>
+      <div class="bio">
+        <p class="role">Rem · Younger Twin · Oni maid of Roswaal Manor</p>
+        <h2>Devotion with a morningstar</h2>
+        <li>Slept Through most of the anime</li>
+        <p>Rem is one of the most beloved characters in Re:Zero, a blue-haired oni maid who works at the Roswaal mansion alongside her twin sister, Ram. At first, Rem appears quiet, polite, and dutiful, but beneath her calm exterior lies someone incredibly determined, emotionally complex, and fiercely devoted to the people she cares about.</p>
+        <p>Rem has struggled with feelings of inferiority and self-doubt, especially because she constantly compares herself to her talented older sister. Despite this, she possesses tremendous strength and courage. She is willing to put herself in danger to protect others and can become an extremely capable fighter when necessary.</p>
+        <p>Her relationship with Subaru becomes especially important because he helps her recognize that she has value beyond being someone's replacement or caretaker. Rem's devotion to Subaru is one of her defining traits, but she also demonstrates genuine compassion toward others and a strong desire to support the people she believes in.</p>
+        <p>At her core, Rem is kind, loyal, hardworking, and incredibly resilient. She may struggle with insecurity and her own sense of worth, but she continues moving forward and protecting those she loves. Her greatest strength isn't simply her combat ability — it's her unwavering determination to believe in and support someone even when they struggle to believe in themselves.</p>
+      <h6><p>In Short: Rem is a major heroine of Re:Zero.</p> A blue-haired oni maid and Ram’s younger twin, serving at Roswaal’s mansion.She is Subaru’s emotional lifeline in the early story: her absolute loyalty, self-sacrifice, and legendary “start from zero” confession pull him out of total despair and redefine his resolve. Even after rejection, her unwavering devotion remains one of the series’ strongest emotional pillars and a driving force behind his growth.</h6>
+      </div>
+    </article>
+
+    <article class="card" id="ram" data-accent="#f472b6">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqy085JxtRpLSNbLePe0poaUtaBU8uVlmgcxhrRkbQQ&s=10" alt="Ram" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Ram</span>
+        <span class="play-chip ram-chip">Sarcasm / Dry wit</span>
+      </div>
+      <div class="bio">
+        <p class="role">Ram · Elder twin · Wind magic · Oni maid of Roswaal Manor</p>
+        <h2>Barbed tongue, hidden loyalty</h2>
+        <li>Geniuses at doing absolutely no physical labor</li>
+        <p>Ram is a pink-haired oni maid who works at the Roswaal mansion alongside her twin sister, Rem. Unlike Rem, Ram is sharp-tongued, confident, sarcastic, and often blunt, rarely hesitating to openly criticize others. Beneath her seemingly lazy and arrogant attitude, however, lies someone highly observant, intelligent, and deeply loyal to the people she cares about.</p>
+        <p>Ram once possessed tremendous talent as an oni, but after losing her horn, much of her natural strength was taken from her. Despite this, she remains remarkably capable through her intelligence, wind magic, quick thinking, and experience. She is especially devoted to Roswaal, supporting him with a loyalty that can sometimes border on absolute.</p>
+        <p>Her relationship with Rem is also central to her character. Although Ram frequently teases or criticizes her sister, she genuinely loves and cares for her, carrying complicated feelings of love, guilt, protectiveness, and responsibility toward Rem.</p>
+        <p>At her core, Ram is proud, clever, fiercely loyal, and far more caring than she lets people see. Her sarcasm and confidence often hide a softer side, and beneath her seemingly carefree attitude is someone who will quietly endure a great deal for the people she considers important.</p>
+      <h6><p>In Short: Ram is a key supporting character in Re:Zero.</p> Pink-haired older twin sister of Rem and a maid at Roswaal’s mansion.
+Despite losing her horn and most of her oni power, she remains highly competent and sharp. She serves as the series’ main source of dry sarcasm (constantly calling Subaru “Barusu”), offers pragmatic advice, and acts as a quiet pillar of loyalty within Emilia’s camp—especially through her deep bond with Rem and complex ties to Roswaal.</h6>
+      </div>
+    </article>
+            <article class="card" id="beatrice" style="--accent:#7dd3fc">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gUjp759u9pwcBbY46WG7XQg_TwMM-_fM3aJow8w57g&s=10" alt="Beatrice" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Beatrice</span>
+        <span class="play-chip beatrice-chip">Librarian</span>
+        
+      </div>
+      <div class="bio">
+        <p class="role">Beatrice · Artificial Spirit · Ankle-Biter Number One</p>
+        <h2>Great Spirit of the Forbidden Library</h2>
+        <li>Spends half her time holding a stuffed bird and sulking, I Suppose</li>
+        <p>Beatrice is the sharp-tongued, drill-haired Spirit of the Forbidden Library with a permanent frown, a heavy tsundere streak, and a habit of ending her sentences with "I suppose." She spent four centuries trapped in solitude, waiting for a mythical "That Person" to free her from her contract, hiding her deep loneliness behind a cold, dismissive wall of pride.</p>
+        <p>What makes Beatrice extraordinary is her sheer mastery of Yin Magic. As a Great Spirit created by Echidna, she bends spatial dimensions at will—effortlessly casting Door Crossing to manipulate reality, banishing enemies into void dimensions with Al Shamak, and casting absolute defensive barriers that make normal attacks completely meaningless.</p>
+        <p>Beneath the regal frills and stubborn arrogance lies a tragically broken child who just wanted to be chosen. Bound by a vague contract that forced her into four hundred years of heartbreaking isolation, she nearly gave up on living entirely until Subaru ignored her rules, smashed through her library doors, and chose her simply for who she was.</p>
+        <p>At her core, Beatrice is pure devotion, unmatched magical brilliance, and deeply hidden warmth. She traded her endless library for a place by Subaru's side, transforming from a tragic guardian into an irreplaceable, loyal partner who will tear through space itself to protect her contractor.</p>
+        <h6><p>In Short: Beatrice is the Great Spirit of Yin Magic in Re:Zero & <mark>Subaru’s</mark> contracted spirit partner.</p> Formerly the overseer of Roswaal’s Forbidden Library, she spent 400 years waiting for "That Person" before forming a soul-bound contract with Subaru Natsuki. Armed with high-tier Yin magic like Door Crossing and Minya, she serves as Subaru's brilliant, drill-haired spirit partner and one of his closest allies.</h6>
+      </div>
+    </article>     
+        <article class="card" id="roswaal" style="--accent:#7dd3fc">
+      <div class="portrait">
+        <img src="https://i.pinimg.com/736x/d8/20/ea/d820eaddddc0327cfa4171058a37c3bc.jpg" alt="Roswaal" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Roswaal</span>
+        <span class="play-chip roswaal-chip">Clown Noble</span>
+        
+      </div>
+      <div class="bio">
+<p class="role">Roswaal L. Mathers · Court Mage · The Clowning Sorcerer</p>
+<h2>Margrave of the Borderlands & Master of the Domain</h2>
+<li>Gets physically beaten up by his own maid for fun</li>
+<p>Roswaal L. Mathers is the flamboyant, theatrical lord of the Roswaal Manor, complete with a jester's outfit, mismatched yellow and blue eyes, and an unnerving, drawn-out speech pattern. As the top court magician in Lugunica, he presents himself as an eccentric eccentric ally, hiding a ruthless, calculating mind that views everyone around him as mere pieces on a chessboard.</p>
+<p>What makes Roswaal terrified-level dangerous is his unmatched mastery over all six magic elements. Inherited across four hundred years of soul-transference, his magical capacity is so vast that he can casually control the weather, unleash apocalyptic storms of fire and ice simultaneously, and fight entire armies single-handedly without breaking a sweat.</p>
+<p>Beneath the extravagant makeup and playful facade lies an obsessive fanatic utterly enslaved by his past. Single-mindedly devoted to Echidna, the Witch of Greed, Roswaal spent centuries engineering horrific tragedies and sacrificing anyone necessary—including his own descendants—all to blindly follow a Gospel that promises his beloved's resurrection.</p>
+<p>At his core, Roswaal is tragic devotion, terrifying intellect, and absolute obsession. He is a man who traded four hundred years of his humanity for a single wish, standing as both a vital patron to the Emilia Camp and a ruthless monster who will burn the world to ashes if his book demands it.</p>
+<h6><p>In Short: Roswaal L. Mathers is the Head of the Mathers House & Lord of the Sanctuary in Re:Zero.</p> Serving as Lugunica's strongest magician and Emilia's primary political sponsor, he secretly works as a mastermind driven by an obsession with Echidna. Armed with supreme mastery over all elemental magic, he is a dangerous wildcard whose loyalties depend entirely on his Gospel.</h6>
+      </div>
+    </article>
+
+    <article class="card" id="felt" data-accent="#facc15">
+      <div class="portrait">
+        <img src="https://gbaike-image.cdn.bcebos.com/b812c8fcc3cec3fdfc0346c808d8c33f8794a4c28977/b812c8fcc3cec3fdfc0346c808d8c33f8794a4c28977_3_4?x-bce-process=image/format,f_auto" alt="Felt" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Felt</span>
+        <span class="play-chip felt-chip">ROyal</span>
+      </div>
+      <div class="bio">
+        <p class="role">Felt · Royal candidate · Slums-born</p>
+        <h2>Steal the crown, rewrite the rules</h2>
+        <li>Prefers eating street garbage over living in a giant mansion</li>
+        <p>Felt is a fiery, rebellious young girl from the slums of the Capital who becomes one of the candidates for the royal selection. With her short blonde hair, red eyes, and bold personality, Felt is independent, outspoken, mischievous, and fiercely determined. She hates being controlled by others and has little patience for the traditions and social hierarchy of Lugunica.</p>
+        <p>Despite her rough attitude and tendency to steal, Felt has a strong sense of freedom and her own idea of justice. She genuinely wants to change the unfair system that keeps people trapped in poverty and believes the kingdom's rigid traditions need to be challenged. Her bluntness can make her seem selfish or reckless, but she is also loyal, courageous, and willing to stand up for people who are treated unfairly.</p>
+        <p>Her partnership with Reinhard also highlights her character: while he represents the immense power and traditions of the kingdom, Felt represents rebellion and change. She doesn't want to become a ruler simply for status — she wants to tear down the old system and create a society where people have more freedom.</p>
+        <p>At her core, Felt is bold, rebellious, fiercely independent, and driven by her desire for freedom. Beneath her rough exterior is someone who genuinely cares about others and refuses to accept a world simply because she was told that's how it has to be.</p>
+      <h6><p>In Short: Felt is a royal selection candidate in Re:Zero.</p> A red-haired former thief from the capital’s slums.
+She becomes one of the five contenders for Lugnica’s throne after Reinhard finds her with the dragon insignia. Representing the lower class and street-smart survival, her candidacy introduces major political conflict early on and forces the story’s power struggles to include the voice of the common people.</h6>
+      </div>
+    </article>
+
+    <article class="card" id="otto" data-accent="#34d399">
+      <div class="portrait">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeO7EIK_-qJIm-15fXW8ZPWSFcSsfVTo_Uwtw07lzIhg&s=10" alt="Otto Suwen" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Otto</span>
+        <span class="play-chip otto-chip">G.O.A.T</span>
+      </div>
+      <div class="bio">
+        <p class="role">Otto Suwen · Merchant · Anima Whispering</p>
+        <h2>The coward who keeps showing up</h2>
+        <li>Gets thrown off moving carriages by Subaru on a daily basis</li>
+        <p>Otto Suwen is a young merchant who initially comes across as nervous, practical, and somewhat cowardly, but gradually proves himself to be one of Subaru's most dependable allies. He possesses the Divine Protection of Anima Whispering, allowing him to communicate with animals and other creatures, which makes him unusually useful for gathering information and navigating dangerous situations.</p>
+        <p>Otto is intelligent, resourceful, and especially good at negotiation, planning, and finding practical solutions. Unlike many of the powerful fighters around him, he doesn't possess overwhelming strength, so he relies on his wits and courage instead. Even when he's terrified, Otto repeatedly chooses to help his friends when it truly matters.</p>
+        <p>His friendship with Subaru is especially important. Otto is one of the people who can recognize when Subaru is pushing himself too far, and he isn't afraid to call him out or physically stop him from making reckless decisions. Their friendship develops into a genuine partnership built on trust, loyalty, and mutual understanding.</p>
+        <p>At his core, Otto is kind, clever, cautious, and surprisingly brave. He may complain, panic, or desperately wish he were somewhere safer, but when the people he cares about need him, he finds the courage to stand beside them anyway.</p>
+      <h6><p>In Short: Otto Suwen is a core member of Emilia’s camp in Re:Zero.</p> A former merchant with the Divine Protection of the Soul of Language (can communicate with animals and understand almost any language).
+He becomes Subaru’s closest pragmatic ally—handling logistics, strategy, and negotiations while serving as the group’s voice of reason. Frequently dragged into chaos against his will, Otto’s grounded perspective and quiet competence help keep the camp functional amid constant disasters.</h6>
+      </div>
+    </article>
+
+      <article class="card" id="garfiel" style="--accent:#7dd3fc">
+      <div class="portrait">
+        <img src="https://i.pinimg.com/1200x/ab/f4/70/abf4702cefb4e10f136c8cc7116ba4e8.jpg" alt="Garfiel" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Garfiel</span>
+        <span class="play-chip garfiel-chip">Gorgeous Tiger</span>
+      </div>
+      <div class="bio">
+        <p class="role">Gartiel Tinsel · Tiger-Gar · Shield of the Sanctuary</p>
+        <h2>Self-Proclaimed Boss</h2>
+        <li>18-year-old edgelord who thinks he is a terrifying tiger demon</li>
+        <p>Garfiel Tinsel is a sharp-fanged, golden-haired quarter-beastman with a habit of dropping bizarre proverbs nobody asked for and standard-issue anger management issues. He spends his days crowning himself the “Strongest in the Sanctuary” and threatening to flatten anyone who steps out of line, hiding a massive savior complex behind raw, bloodthirsty brawn.</p>
+        <p>Beneath the aggressive posturing and the ability to turn into a house-sized golden tiger is a scared kid who locked himself in a cage. Traumatized by a past he misunderstood, Garfiel spent years using his terrifying physical strength to keep the Sanctuary closed off from the world—convinced that keeping everyone trapped was the only way to keep them alive.</p>
+        <p>It takes Subaru physically beating some sense into him—and forcing him to confront his own forgotten past—for Garfiel to realize that hiding behind muscle and fear isn't protection. Once he finally breaks his self-imposed chains, he trades his role as Sanctuary’s warden for something far better: an unbreakable shield for the people he chooses to follow.</p>
+        <p>At his core, Garfiel is pure muscle, terrible poetry, and unconditional loyalty. He's a wild beast who will tear through a wall of enemies just to protect a friend, screaming made-up idioms every single step of the way.</p>
+      <h6><p>In Short: Garfiel Tinzel is a key combatant in Emilia’s camp in Re:Zero.</p>A hot-headed demi-human (half-beast) warrior from the Sanctuary with immense physical power and the Divine Protection of Earth Spirits.Originally the aggressive guardian of the Sanctuary, he is won over by Subaru and becomes one of the group’s strongest fighters. His raw strength, fierce loyalty, and gradual maturity make him a vital frontline force in later conflicts.</h6>
+      </div>
+    </article>
+      
+            <article class="card" id="frederica" style="--accent:#7dd3fc">
+      <div class="portrait">
+        <img src="https://i.pinimg.com/736x/5b/6f/0b/5b6f0b44bf88c59e4a92ccb49ce93217.jpg" alt="frederica" />
+        <span class="portrait-shade"></span>
+        <span class="portrait-name">Frederica</span>
+        <span class="play-chip frederica-chip">Freddy fazbers ur ur ur rur ur</span>
+      </div>
+      <div class="bio">
+<p class="role">Frederica Baumann · Head Maid · The Silver-Fanged Guardianr</p>
+      <h2>Head Maid of Roswaal Manor & Guardian Beast</h2>
+      <li>Terrifies Subaru just by smiling at him a little too warmly</li>
+     <p>Frederica Baumann is the poised, elegant head maid of the Roswaal Manor, easily recognized by her waist-length golden hair, emerald-green eyes, and sharp, predatory fangs that she politely covers when speaking. As Garfiel's older sister and a quarter-beastman, she balances refined, high-class etiquette with the overwhelming physical strength of a born predator.</p>
+     <p>What makes Frederica exceptionally formidable is her hidden beastification ability. Beneath her graceful, tea-serving composure lies the power to transform into a massive, bloodthirsty silver leopard—giving her terrifying speed, razor-sharp claws, and raw martial power capable of going toe-to-toe with deadly assassins like Elsa Granhiert.</p>
+     <p>Beneath her flawless professionalism lies a deeply devoted older sister who bore the heavy burden of leaving the Sanctuary alone. While Garfiel stayed trapped in the past, Frederica ventured into the outside world to build a life, working tirelessly as a maid to earn a place of safety and prepare a future for her brother when he was finally ready to leave.</p>
+     <p>At her core, Frederica is quiet dignity, fierce protective instincts, and unwavering loyalty. She is the steady backbone of the Roswaal household—a gentle, refined maid who will instantly unleash her inner beast to protect her allies, her brother, and the manor she calls home.</p>
+     <h6><p>In Short: Roswaal L. Mathers is the Head of the Mathers House & Lord of the Sanctuary in Re:Zero.</p> Serving as Lugunica's strongest magician and Emilia's primary political sponsor, he secretly works as a mastermind driven by an obsession with Echidna. Armed with supreme mastery over all elemental magic, he is a dangerous wildcard whose loyalties depend entirely on his Gospel.</h6>
+      </div>
+    </article>
+
+        <article class="card" id="petra" style="--accent:#ea580c">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/b3/24/56/b324566960c8c9b05d4eacba5549d363.jpg" alt="petra" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Petra</span>
+    <span class="play-chip petra-chip">Roswaal Mansion Maid</span>
+  </div>
+  <div class="bio">
+    <p class="role">Petra Leyte · Maid in Training · Village Prodigy</p>
+    <li>Thinks she's Subaru's main heroine, gets stuck doing his laundry instead</li>
+    <p>Petra Leyte is an energetic and clever young girl from Irlam Village near the Roswaal Mansion. Instantly recognizable by her bright orange hair ribbon and cheerful disposition, she quickly steps up to work as a apprentice maid at the mansion under Frederica's guidance.</p>
+    <p>Despite her young age and lack of combat training, Petra possesses remarkable sharpness and spatial awareness. She uses her ribbon, which is enchanted with earth magic, alongside clever tactical planning to outsmart far stronger assassins during attacks on the mansion.</p>
+    <p>She harbors a huge, unabashed crush on Subaru, often competing with the other girls for his attention while taking her new responsibilities as a caretaker with absolute seriousness.</p>
+    <p>At her core, Petra represents innocent bravery, rapid growth, and unshakeable resolve. She goes from a vulnerable village girl to a key defender of the mansion, refusing to let her size hold her back.</p>
+    <h6><p>In Short: Petra Leyte is the Roswaal Mansion's Apprentice Maid & Village Prodigy in Re:Zero.</p> Driven by her affection for Subaru, she uses her sharp mind and ribbon magic to protect those she cares about against deadly threats.</h6>
+  </div>
+</article>
+
+<article class="card" id="reinhard" style="--accent:#ef4444">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/15/6b/cc/156bccf4f9637c9211cacef3c5600ffb.jpg" alt="reinhard" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Reinhard</span>
+    <span class="play-chip reinhard-chip">Sword Saint</span>
+  </div>
+  <div class="bio">
+    <p class="role">Reinhard van Astrea · Sword Saint · Knight of Felt</p>
+    <li>Golden boy</li>
+    <p>Reinhard van Astrea is the current Sword Saint, a living legend, and widely recognized as the strongest entity in the world. Striking in appearance with fiery red hair and sky-blue eyes, he embodies the pinnacle of chivalry as a Royal Guard knight who serves as the knight and primary backer of Felt in the Royal Selection.</p>
+    <p>He is blessed by the world itself with an endless array of Divine Protections, allowing him to dodge incoming attacks, nullify magic, and adapt instantly to any combat scenario. Wielding the legendary Dragon Sword Reid, his unmatched skill with a blade ensures that no opponent can match him in direct combat.</p>
+    <p>Despite holding absolute power, Reinhard remains humble, polite, and deeply compassionate. He treats everyone with utmost respect regardless of their status, carrying the heavy burden of his title and complex family legacy with absolute grace and a strong moral compass.</p>
+    <p>At his core, Reinhard is noble chivalry, overwhelming strength, and unwavering duty. He is the ultimate protector of Lugunica—a truly invincible hero whose kindness shines just as brightly as his legendary swordplay.</p>
+    <h6><p>In Short: Reinhard van Astrea is the Sword Saint & Royal Guard Knight in Re:Zero.</p> Serving as the loyal protector of Felt, he holds countless Divine Protections and the Dragon Sword Reid, making him the world's most powerful being and an unbeatable beacon of justice.</h6>
+  </div>
+</article>
+
+<article class="card" id="crusch" style="--accent:#16a34a">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/6a/ad/93/6aad93850e530d19ac2c5debad6a67cf.jpg" alt="crusch" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Crusch</span>
+    <span class="play-chip crusch-chip">Duchess</span>
+  </div>
+  <div class="bio">
+    <p class="role">Crusch Karsten · Head of House Karsten · Royal Selection Candidate</p>
+    <li>Keeps getting hit with memory loss because the plot fears her power</li>
+    <p>Crusch Karsten is the noble head of House Karsten and a prominent candidate in the Royal Selection to become the next ruler of Lugunica. Regarded as one of the most capable leaders in the kingdom, she is defined by her commanding presence, dark green hair, and unyielding dedication to freeing her nation from its dependency on the Dragon.</p>
+    <p>She possesses the powerful Divine Protection of Wind Indication, allowing her to read the wind currents to sense the emotions, honesty, and intentions of others—making it impossible to lie to her. Combined with her master-level sword technique, the "Hundred Man Strike," she commands the battlefield with lethal precision.</p>
+    <p>Despite her strict demeanor and military precision, Crusch is exceptionally fair, honorable, and deeply cares for her subjects and allies. She evaluates people based on their resolve and actions rather than status, forming a vital alliance with Subaru and Emilia during the subjugation of the White Whale.</p>
+    <p>At her core, Crusch represents unbreakable will, dignified leadership, and righteous ambition. She is a fearless leader whose dream of a self-reliant kingdom inspires unshakeable loyalty in all who follow her.</p>
+    <h6><p>In Short: Crusch Karsten is a Royal Candidate & Head of House Karsten in Re:Zero.</p> Seeking to sever Lugunica's covenant with the Dragon, she utilizes her Divine Protection of Wind Indication and tactical genius to lead her house, standing as one of the most powerful political and military leaders in the realm.</h6>
+  </div>
+</article>
+
+<article class="card" id="felix" style="--accent:#38bdf8">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/cb/ff/ae/cbffaee5c53d16810a1cdb2b8364390c.jpg" alt="felix" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Felix</span>
+    <span class="play-chip felix-chip">Royal Healer</span>
+  </div>
+  <div class="bio">
+    <p class="role">Ferris (Felix Argyle) · Knight of House Karsten · Royal Healer</p>
+    <li>Femboy</li>
+    <p>Felix Argyle, commonly known as Ferris, is the personal knight of Crusch Karsten and the greatest healer in the Kingdom of Lugunica. Instantly recognizable by his cat ears, playful speech mannerisms, and cross-dressing attire, he conceals immense loyalty and a sharp mind behind a whimsical demeanor.</p>
+    <p>He holds the Divine Protection of Water, granting him unmatched mastery over Water Magic. Beyond standard healing, his ability allows him to manipulate the body's internal fluids, cure deadly afflictions, and even control an opponent's nervous system or resurrect the recently deceased in extreme circumstances.</p>
+    <p>While often appearing frivolous and teasing, Ferris is fiercely protective of Crusch and ruthlessly pragmatic when it comes to defending her interests. His bond with Crusch spans back to their childhood, forming the unbreakable cornerstone of his entire life and knightly vow.</p>
+    <p>At his core, Ferris is absolute devotion, supreme healing mastery, and sharp cunning. He is the life-saving heart of the Karsten camp—a formidable knight whose playful smile hides an unwavering dedication to those he loves.</p>
+    <h6><p>In Short: Felix Argyle is the Royal Healer & Knight of Crusch in Re:Zero.</p> Renowned as the world's greatest Water Magic user, he wields the Divine Protection of Water to heal fatal injuries and command the battlefield, serving as Crusch Karsten's most trusted confidant and protector.</h6>
+  </div>
+</article>
+
+<article class="card" id="wilhelm" style="--accent:#94a3b8">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/fa/35/59/fa35595e5add1b353dd0c9b5d2b27eb1.jpg" alt="wilhelm" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Wilhelm</span>
+    <span class="play-chip wilhelm-chip">Sword Demon</span>
+  </div>
+  <div class="bio">
+    <p class="role">Wilhelm van Astrea · House Karsten Butler · Veteran Swordsman</p>
+    <li>"Did you know my wife is dead?"</li>
+    <p>Wilhelm van Astrea, known across the land as the "Sword Demon," is an elderly butler serving House Karsten. Despite his advanced age and dignified, polite manners, he remains one of the most lethal and respected swordsmen in Lugunica, capable of feats that defy mortal limits through sheer skill and willpower.</p>
+    <p>Unlike his grandson Reinhard, Wilhelm possesses no Divine Protections or inherent magic blessings. Every ounce of his speed, precision, and strength was forged through decades of relentless training and blood-soaked battles, earning him widespread awe as a man who conquered the sword through pure human effort.</p>
+    <p>He is driven by an unyielding love for his late wife, Thearesia van Astrea, the former Sword Saint. His entire life after her loss has been dedicated to honing his blade to avenge her death at the hands of the White Whale, a tragic history that fuels his fierce resolve on the battlefield.</p>
+    <p>At his core, Wilhelm represents absolute devotion, razor-sharp mastery, and boundless perseverance. He stands as a true master of the blade—a legendary elder whose iron loyalty and swordplay command respect from allies and enemies alike.</p>
+    <h6><p>In Short: Wilhelm van Astrea is the Sword Demon & Butler of House Karsten in Re:Zero.</p> Relying purely on incredible martial skill without Divine Protections, he serves Crusch Karsten while seeking vengeance for his wife, standing as a legendary master swordsman who slew the White Whale.</h6>
+  </div>
+</article>
+
+<article class="card" id="anastasia" style="--accent:#38bdf8">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/cd/94/bd/cd94bd68556a77d0ba745cd838712f2e.jpg" alt="anastasia" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Anastasia</span>
+    <span class="play-chip anastasia-chip">Merchant Queen</span>
+  </div>
+  <div class="bio">
+    <p class="role">Anastasia Hoshin · Head of Hoshin Trading Company · Royal Selection Candidate</p>
+    <li>Will happily scam you out of your soul if the profit margin is high enough</li>
+    <p>Anastasia Hoshin is the ambitious head of the renowned Hoshin Trading Company and a leading candidate in the Royal Selection for the throne of Lugunica. Instantly recognizable by her elegant furs, soft purple hair, and distinct Kansai dialect, she rose from a penniless orphan in Kararagi to one of the wealthiest magnates in the world.</p>
+    <p>Though she lacks offensive combat ability due to a defective gate that restricts her mana usage, her true strength lies in her unmatched intellect, sharp business acumen, and economic influence. She commands the formidable mercenary group, the Iron Fang, ensuring her interests are protected both politically and on the battlefield.</p>
+    <p>Anastasia is driven by an insatiable desire to acquire everything she wants, viewing the Kingdom of Lugunica as the ultimate deal to close. Despite her greedy reputation, she is deeply pragmatic, fair in negotiations, and values genuine merit over noble bloodlines.</p>
+    <p>At her core, Anastasia represents relentless ambition, economic brilliant strategy, and self-made success. She is a visionary merchant leader whose sharp mind and commercial empire make her a formidable force in the fight for the crown.</p>
+    <h6><p>In Short: Anastasia Hoshin is a Royal Candidate & Merchant Leader in Re:Zero.</p> Rising from poverty to found the Hoshin Trading Company, she uses her vast wealth, economic genius, and the Iron Fang mercenaries to pursue the throne of Lugunica.</h6>
+  </div>
+</article>
+
+<article class="card" id="al" style="--accent:#ea580c">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/1200x/3c/6e/e1/3c6ee132bba894b57b6d8613aba1523b.jpg" alt="al" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Al</span>
+    <span class="play-chip al-chip">One-Armed Knight</span>
+  </div>
+  <div class="bio">
+    <p class="role">Aldebaran (Al) · Knight of Priscilla Barielle · Ex-Gladiator</p>
+    <li>Black Pill ahh</li>
+    <p>Aldebaran, commonly known as Al, is the eccentric, one-armed knight serving Priscilla Barielle. Instantly recognizable by his full steel helmet, laid-back attitude, and distinct casual slang, he is a fellow otherworldly summoner from Japan who survived years as a gladiator in the Vollachian Empire before entering Priscilla's service.</p>
+    <p>Despite missing his left arm and lacking elite martial talent, Al is a surprisingly dangerous combatant. He utilizes Earth Magic combined with a bizarre, mysterious domain ability that creates a spatial loop, allowing him to endlessly retry a fight until he finds a path to victory—a power strikingly similar to Subaru's Return by Death.</p>
+    <p>Behind his lazy, self-deprecating demeanor lies a deeply secretive and perceptive veteran who understands the dark realities of their world far better than he lets on. His absolute devotion to Priscilla is unwavering, acting as her ultimate shield regardless of how chaotic or hazardous the battlefield becomes.</p>
+    <p>At his core, Al represents quiet resilience, hidden depths, and stubborn survival. He is a enigmatic veteran whose laid-back front hides a lethal willingness to die as many times as necessary to protect his princess.</p>
+    <h6><p>In Short: Aldebaran is the Knight of Priscilla & Otherworlder in Re:Zero.</p> A former Vollachian gladiator who lost his arm, he uses Earth Magic and a mysterious time-looping territory ability to protect Priscilla Barielle at all costs.</h6>
+  </div>
+</article>
+
+<article class="card" id="julius" style="--accent:#a855f7">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/1200x/b8/ca/04/b8ca04c2c9e59781fcca1469c6c20ff8.jpg" alt="julius" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Julius</span>
+    <span class="play-chip julius-chip">Finest Knight</span>
+  </div>
+  <div class="bio">
+    <p class="role">Julius Juukulius · Knight of Anastasia Hoshin · Royal Guard</p>
+    <li>Gets erased from everyone's memories and falls into a mid-life crisis</li>
+    <p>Julius Juukulius is a member of the Royal Guard and the devoted personal knight of Anastasia Hoshin. Widely renowned as the "Finest Knight" among the Kingdom of Lugunica's military, he possesses striking purple hair, immaculate chivalric manners, and an unwavering commitment to duty and honor.</p>
+    <p>As a master Spirit Knight, Julius contracts with six quasi-spirits representing all main magic elements—Fire, Water, Wind, Earth, Light, and Shadow. Combined with his expert swordplay, he weaves elemental magic seamlessly into his blade techniques, making him a devastatingly versatile duel candidate on the battlefield.</p>
+    <p>Though initially clashing with Subaru over knightly ideals and noble dignity, Julius respects true determination above all else. Over time, their fierce rivalry evolves into a deep, mutual brotherhood as they stand shoulder-to-shoulder against the Sin Archbishops.</p>
+    <p>At his core, Julius embodies chivalric perfection, profound loyalty, and elegant martial strength. He is a noble defender whose absolute dedication to Anastasia and his knightly oath makes him a true cornerstone of Lugunica.</p>
+    <h6><p>In Short: Julius Juukulius is the Finest Knight & Spirit Knight in Re:Zero.</p> Serving Anastasia Hoshin with absolute loyalty, he combines high-level swordplay with six elemental spirits to uphold justice and protect the kingdom.</h6>
+  </div>
+</article>
+
+<article class="card" id="priscilla" style="--accent:#dc2626">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/60/36/c8/6036c82a2b775e3feafd8340f2f172af.jpg" alt="priscilla" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Priscilla</span>
+    <span class="play-chip priscilla-chip">Sun Princess</span>
+  </div>
+  <div class="bio">
+    <p class="role">Priscilla Barielle · Head of House Barielle · Royal Selection Candidate</p>
+    <li>The Sun Princess & Wielder of the Yang Sword. Also with the biggest yams in the series</li>
+    <p>Priscilla Barielle is the proud head of House Barielle and a major candidate in the Royal Selection to rule Lugunica. Recognized by her flame-red dress, crimson eyes, and fan, she firmly believes that the entire world is constructed to turn in her favor at every given moment.</p>
+    <p>She possesses the Divine Protection of the Sun, granting her immense power during the day and enhancing her physical abilities. Combined with the legendary Yang Sword Vollachia—a weapon of brilliant light that she can manifest from thin air—she burns down anyone insolent enough to oppose her with overwhelming force.</p>
+    <p>Despite her arrogant, regal demeanor and harsh words, Priscilla possesses sharp political insight and absolute confidence that commands respect. She despises weakness and cowardice, yet acknowledges genuine bravery and entertaining resolve in others on her own terms.</p>
+    <p>At her core, Priscilla represents supreme confidence, fiery majesty, and absolute dominance. She is an undeniable force—a sun princess whose radiant power and fierce pride leave a scorching mark on the fight for the crown.</p>
+    <h6><p>In Short: Priscilla Barielle is a Royal Candidate & Head of House Barielle in Re:Zero.</p> Believing the world yields entirely to her whim, she wields the Divine Protection of the Sun and the legendary Yang Sword Vollachia to conquer her foes with supreme elegance.</h6>
+  </div>
+</article>
+
+<article class="card" id="elsa" style="--accent:#be123c">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/54/47/58/544758781560266c0eec42b61b9725f1.jpg" alt="elsa" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Elsa</span>
+    <span class="play-chip elsa-chip">Bowel Hunter</span>
+  </div>
+  <div class="bio">
+    <p class="role">Elsa Granhiert · Assassin · The Bowel Hunter</p>
+    <li>"The cold doesnt bother me anyway"</li>
+    <p>Elsa Granhiert, notorious across the underworld as the "Bowel Hunter," is a sadistic assassin for hire. Recognized by her long black braided hair, revealing dark outfit, and signature curved kukri blades, she harbors a morbid fixation with slicing open the abdomens of her victims to feel their warmth.</p>
+    <p>In battle, Elsa is a terrifying force of lethal precision and unnatural agility. Possessing a vampire-like curse, she boasts extraordinary regenerative capabilities that allow her to survive fatal wounds, organ destruction, and crippling blows that would instantly kill an ordinary human.</p>
+    <p>Despite her terrifyingly bloodthirsty nature, Elsa maintains a calm, polite, and sultry tone even while slaughtering her targets. She forms a close, almost maternal partnership with Maylie Portroute, fulfilling assassination contracts with cold efficiency and dark enthusiasm.</p>
+    <p>At her core, Elsa represents morbid obsession, relentless lethality, and uncanny resilience. She is a nightmarish predator—a deadly assassin whose bloodlust and supernatural regeneration make her a recurring threat to Subaru and his allies.</p>
+    <h6><p>In Short: Elsa Granhiert is the Bowel Hunter & Assassin in Re:Zero.</p> Driven by a morbid fascination with warm bowels, she wields dual kukri blades and supernatural regenerative powers to relentlessly pursue her targets.</h6>
+  </div>
+</article>
+
+<article class="card" id="rom" style="--accent:#b45309">
+  <div class="portrait">
+    <img src="https://i.redd.it/fpv5srd53e5e1.png" alt="rom" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Rom</span>
+    <span class="play-chip rom-chip">Loot House Owner</span>
+  </div>
+  <div class="bio">
+    <p class="role">Old Man Rom (Cromwell) · Loot House Owner · Veteran Giant</p>
+    <li>Off screened on episode 1</li>
+    <p>Old Man Rom, whose true name is Cromwell, is the towering owner of the Loot House in the slums of the Royal Capital. Easily recognized by his massive giant physique, bald head, and weathered beard, he acts as a father figure and protector to Felt in the harsh underbelly of the city.</p>
+    <p>Despite his current low-profile life as a fence for stolen goods, Rom is secretly a surviving veteran of the Demi-Human War, where he fought as a key commander for the giant faction. His immense physical strength allows him to swing heavy clubs effortlessly, making him a dangerous brawler when pushed to defend his home.</p>
+    <p>Behind his rugged appearance and gruff voice lies a deeply compassionate heart. His affection for Felt goes far beyond a simple business arrangement, as he willingly puts his life on the line to safeguard her future and ensure she escapes poverty.</p>
+    <p>At his core, Rom represents fierce loyalty, protective warmth, and enduring strength. He is a gentle giant in times of peace—a devoted guardian whose fatherly bond with Felt drives everything he does.</p>
+    <h6><p>In Short: Old Man Rom is the Loot House Owner & Former Giant Commander in Re:Zero.</p> A veteran of the Demi-Human War, he uses his massive size and giant heritage to watch over Felt, serving as her most trusted guardian in the capital slums.</h6>
+  </div>
+</article>
+
+<article class="card" id="mimi" style="--accent:#f43f5e">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/2b/0e/ae/2b0eaedc020e459e280ed3eae1fcdf06.jpg" alt="mimi" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Mimi</span>
+    <span class="play-chip mimi-chip">Iron Fang Vice-Captain</span>
+  </div>
+  <div class="bio">
+    <p class="role">Mimi Pearlbaton · Iron Fang Vice-Captain · Triplet Beast Human</p>
+    <li>Will destroy a high-tier enemy unit, then demand candy as compensation</li>
+    <p>Mimi Pearlbaton is the hyperactive, cat-like Beast Human vice-captain of the Iron Fang, Anastasia Hoshin's personal mercenary group. Small in size but loud in personality, she is instantly recognizable by her oversized robe, cheerful demeanor, and complete lack of volume control.</p>
+    <p>Despite her childish appearance, Mimi is a terrifying frontline combatant. She uses a massive staff and possesses an immense mana pool, allowing her to unleash destructive wave-based resonance attacks alongside her twin brothers, Hetaro and Tivey.</p>
+    <p>She holds a massive, unreserved crush on Garfiel Tinsel, constantly smothering him with affection and following him around regardless of how flustered or annoyed he gets.</p>
+    <p>At her core, Mimi represents pure chaos, fierce loyalty, and overwhelming destructive force. She approaches life-or-death battles with the exact same excitement as eating snacks.</p>
+    <h6><p>In Short: Mimi Pearlbaton is the Iron Fang Vice-Captain & Resonance Mage in Re:Zero.</p> A miniature powerhouse who fights with heavy physical attacks and sonic magic, she brings pure chaotic energy to Anastasia's mercenary force.</h6>
+  </div>
+</article>
+
+<article class="card" id="hetaro" style="--accent:#0ea5e9">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/ae/3d/af/ae3daf6d31f816005b766989fd49077c.jpg" alt="hetaro" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Hetaro</span>
+    <span class="play-chip hetaro-chip">Iron Fang Vice-Captain</span>
+  </div>
+  <div class="bio">
+    <p class="role">Hetaro Pearlbaton · Iron Fang Vice-Captain · Triplet Beast Human</p>
+    <li>The only sibling with a working brain cell, permanently on babysitting duty</li>
+    <p>Hetaro Pearlbaton is the sensible middle sibling of the Pearlbaton triplets and serves as a vice-captain in the Iron Fang mercenary company. Sporting cat-like features and a calm demeanor, he acts as the primary voice of reason whenever Mimi's reckless behavior threatens to cause chaos.</p>
+    <p>In battle, Hetaro is a skilled spearman who specializes in defense and tactical support. He shares a unique resonance ability with Mimi, allowing them to absorb, share, or redirect physical impact and magic damage between each other to survive lethal hits.</p>
+    <p>He is deeply protective of Mimi and Tivey, often taking on extra stress just to make sure his sister doesn't accidentally wander off or blow something up during a mission.</p>
+    <p>At his core, Hetaro represents quiet devotion, defensive mastery, and sibling loyalty. He provides the grounding balance that keeps the Iron Fang's frontline units operating effectively.</p>
+    <h6><p>In Short: Hetaro Pearlbaton is an Iron Fang Vice-Captain & Shielding Specialist in Re:Zero.</p> Serving as the reliable middle triplet, he uses spear techniques and damage-sharing resonance magic to keep his reckless sister Mimi alive.</h6>
+  </div>
+</article>
+
+<article class="card" id="tivey" style="--accent:#8b5cf6">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/a6/a8/f8/a6a8f817843ac7d1ef4f57e235817a5c.jpg" alt="tivey" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Tivey</span>
+    <span class="play-chip tivey-chip">Iron Fang Vice-Captain</span>
+  </div>
+  <div class="bio">
+    <p class="role">Tivey Pearlbaton · Iron Fang Vice-Captain · Triplet Beast Human Strategist</p>
+    <li>Wears a monocle to look smart, mostly uses it to calculate how over budget they are</li>
+    <p>Tivey Pearlbaton is the youngest of the Pearlbaton triplets and a vice-captain of the Iron Fang. Easily identified by his distinctive monocle and bookish appearance, he handles the group's logistics, strategy, and record-keeping for Anastasia Hoshin.</p>
+    <p>While not as physically aggressive as Mimi, Tivey provides crucial long-range support using spellbooks and offensive magic. He uses the triplets' shared wave resonance to amplify Mimi's attacks from a safe distance.</p>
+    <p>Despite trying to maintain a mature and professional image, he frequently breaks character and bickers with Mimi over her childish antics and total lack of financial discipline.</p>
+    <p>At his core, Tivey represents intellect, strategic support, and sharp tactical foresight. He ensures that the Iron Fang's raw power is backed up by proper planning and execution.</p>
+    <h6><p>In Short: Tivey Pearlbaton is an Iron Fang Vice-Captain & Strategist in Re:Zero.</p> The intellectual youngest triplet, he uses spellbooks and magic resonance to coordinate battle plans and back up his siblings in combat.</h6>
+  </div>
+</article>
+
+
+
+<article class="card" id="ricardo" style="--accent:#d97706">
+  <div class="portrait">
+    <img src="https://i.pinimg.com/736x/a6/1c/ed/a61ced14845e5d5aec70d359fbffb945.jpg" alt="ricardo" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Ricardo</span>
+    <span class="play-chip ricardo-chip">Iron Fang Captain</span>
+  </div>
+  <div class="bio">
+    <p class="role">Ricardo Welkin · Iron Fang Captain · Kobold Beast-Human</p>
+    <li>Loves big axes, laughing out loud, and adopting dangerous combat situations</li>
+    <p>Ricardo Welkin is the towering, dog-like Kobold Beast-Human who serves as the head captain of the Iron Fang mercenary troupe. Boasting a massive frame, wild fur, and an booming laugh, he commands absolute respect from his crew through pure charisma and strength.</p>
+    <p>In battle, Ricardo wields a massive shotel-style blade with terrifying physical force. His natural beast instincts, combined with decades of veteran combat experience, make him an unstoppable vanguard capable of trading blows with high-tier monsters and Sin Archbishops.</p>
+    <p>Despite his rough-and-tumble warrior attitude, he is a protective father figure to the Pearlbaton triplets and holds fierce, unshakable loyalty toward his employer, Anastasia Hoshin.</p>
+    <p>At his core, Ricardo represents warrior honor, jovial brotherhood, and unbreakable frontline spirit. He is the loud, battle-hungry heart of the Iron Fang who always steps up to shield his allies.</p>
+    <h6><p>In Short: Ricardo Welkin is the Iron Fang Captain & Veteran Vanguard in Re:Zero.</p> A jovial Kobold powerhouse, he leads Anastasia's mercenaries with overwhelming physical strength and fierce loyalty.</h6>
+  </div>
+</article>
+
+<article class="card" id="kadomon" style="--accent:#16a34a">
+  <div class="portrait">
+    <img src="https://preview.redd.it/media-happy-birthday-to-the-appa-checkpoint-guy-kadomon-v0-t2mp0m6v7ox51.jpg?width=640&crop=smart&auto=webp&s=89ec4383fcd3acc5ba6eaef24ea627afd93e2efa" alt="kadomon" />
+    <span class="portrait-shade"></span>
+    <span class="portrait-name">Kadomon</span>
+    <span class="play-chip kadomon-chip">Appa Vendor</span>
+  </div>
+  <div class="bio">
+    <p class="role">Kadomon Risch · Appa Merchant · Capital Street Guide</p>
+    <li>The official checkpoint trigger for every single Return by Death loop</li>
+    <p>Kadomon Risch is a muscular, scar-faced merchant who operates a prominent fruit stall selling Appas in the capital of Lugunica. With a twig perpetually clamped in his teeth and an intimidating glare, he looks more like a mercenary than a street vendor.</p>
+    <p>Despite his terrifying appearance, Kadomon is an honest businessman with a surprisingly helpful nature. He serves as Subaru's very first interaction upon arriving in the fantasy world, kicking him away when he has no money but offering useful directions and advice once coins are on the table.</p>
+    <p>He is a family man dedicated to supporting his wife and daughter, using his tough exterior simply to keep order around his shop in the chaotic market district.</p>
+    <p>At his core, Kadomon represents the grounded reality of Lugunica's everyday citizens. He is the ultimate anchor of the story—a gruff yet kindhearted vendor who marks the starting line of Subaru's journey.</p>
+    <h6><p>In Short: Kadomon Risch is the iconic Appa Vendor & Capital Merchant in Re:Zero.</p> Behind his rugged, scarred face lies a hardworking shopkeeper who constantly guides Subaru at the start of his timeline resets.</h6>
+  </div>
+</article>
+
+  </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="theme" src="MeantToBe.mp3" preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</body>
+</html>
