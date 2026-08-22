@@ -479,9 +479,64 @@ main {
   box-shadow: 0 8px 24px rgba(180, 83, 9, 0.35);
 }
 
-.cast-nav a[href*="rom"]:hover {
-  background: rgba(249, 115, 22, 0.4);
-  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+/* Mimi - Rose Pink (#f43f5e) */
+.cast-nav a[href*="mimi"] {
+  color: #fecdd3;
+  border-color: rgba(244, 63, 94, 0.6);
+  background: rgba(244, 63, 94, 0.2);
+}
+
+.cast-nav a[href*="mimi"]:hover {
+  background: rgba(244, 63, 94, 0.4);
+  box-shadow: 0 8px 24px rgba(244, 63, 94, 0.35);
+}
+
+/* Hetaro - Sky Blue (#0ea5e9) */
+.cast-nav a[href*="hetaro"] {
+  color: #bae6fd;
+  border-color: rgba(14, 165, 233, 0.6);
+  background: rgba(14, 165, 233, 0.2);
+}
+
+.cast-nav a[href*="hetaro"]:hover {
+  background: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.35);
+}
+
+/* Tivey - Purple (#8b5cf6) */
+.cast-nav a[href*="tivey"] {
+  color: #ddd6fe;
+  border-color: rgba(139, 92, 246, 0.6);
+  background: rgba(139, 92, 246, 0.2);
+}
+
+.cast-nav a[href*="tivey"]:hover {
+  background: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.35);
+}
+
+/* Ricardo - Warm Amber (#d97706) */
+.cast-nav a[href*="ricardo"] {
+  color: #fef08a;
+  border-color: rgba(217, 119, 6, 0.6);
+  background: rgba(217, 119, 6, 0.2);
+}
+
+.cast-nav a[href*="ricardo"]:hover {
+  background: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 8px 24px rgba(217, 119, 6, 0.35);
+}
+
+/* Kadomon - Forest Green (#16a34a) */
+.cast-nav a[href*="kadomon"] {
+  color: #bbf7d0;
+  border-color: rgba(22, 163, 74, 0.6);
+  background: rgba(22, 163, 74, 0.2);
+}
+
+.cast-nav a[href*="kadomon"]:hover {
+  background: rgba(22, 163, 74, 0.4);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.35);
 }
 
 .hint {
@@ -821,6 +876,36 @@ button.portrait.playing img {
   color: #fde047;
 }
 
+.mimi-chip {
+  background: rgba(244, 63, 94, 0.2);
+  border-color: rgba(244, 63, 94, 0.6);
+  color: #fecdd3;
+}
+
+.hetaro-chip {
+  background: rgba(14, 165, 233, 0.2);
+  border-color: rgba(14, 165, 233, 0.6);
+  color: #bae6fd;
+}
+
+.tivey-chip {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.6);
+  color: #ddd6fe;
+}
+
+.ricardo-chip {
+  background: rgba(217, 119, 6, 0.2);
+  border-color: rgba(217, 119, 6, 0.6);
+  color: #fef08a;
+}
+
+.kadomon-chip {
+  background: rgba(22, 163, 74, 0.2);
+  border-color: rgba(22, 163, 74, 0.6);
+  color: #bbf7d0;
+}
+
 .bio {
   padding: 1.7rem 1.8rem 1.9rem;
 }
@@ -1010,5 +1095,38 @@ button.portrait.playing img {
 }
 
 .cast-nav {
+  scroll-behavior: smooth;
+}
+
+.season-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.season-btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border: 1.5px solid #00f2ff; /* Adjust border color to match your theme */
+  border-radius: 20px;
+  color: #00f2ff;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.season-btn:hover {
+  background-color: rgba(0, 242, 255, 0.15);
+  box-shadow: 0 0 12px rgba(0, 242, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+html {
   scroll-behavior: smooth;
 }
