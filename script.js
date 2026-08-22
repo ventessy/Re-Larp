@@ -39,20 +39,20 @@ document.querySelectorAll(".portrait img").forEach((img) => {
 });
 
 function playSynth() {
-  const audio = new AudioContext();
-  const now = audio.currentTime;
+  const audioCtx = new AudioContext();
+  const now = audioCtx.currentTime;
   const notes = [261.63, 329.63, 392.0, 523.25, 392.0, 329.63, 261.63];
 
   notes.forEach((freq, i) => {
-    const osc = audio.createOscillator();
-    const gain = audio.createGain();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
     osc.type = "triangle";
     osc.frequency.value = freq;
     gain.gain.setValueAtTime(0, now + i * 0.18);
     gain.gain.linearRampToValueAtTime(0.12, now + i * 0.18 + 0.04);
     gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.18 + 0.42);
     osc.connect(gain);
-    gain.connect(audio.destination);
+    gain.connect(audioCtx.destination);
     osc.start(now + i * 0.18);
     osc.stop(now + i * 0.18 + 0.45);
   });
@@ -66,12 +66,38 @@ function showToast(text) {
   showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2800);
 }
 
-const portrait = document.getElementById("subaru-portrait");
+// Audio Elements
+const bgMusic = document.getElementById('bg-music');
 const theme = document.getElementById("theme");
+const portrait = document.getElementById("subaru-portrait");
 
+// Set background volume
+bgMusic.volume = 0.5;
+
+// Function to handle background music play attempt
+function playAudio() {
+  bgMusic.play().then(() => {
+    document.removeEventListener('click', playAudio);
+    document.removeEventListener('keydown', playAudio);
+  }).catch((error) => {
+    console.log("Autoplay blocked. Waiting for user interaction.");
+  });
+}
+
+// Attempt to play background music immediately or on first click/key press
+playAudio();
+document.addEventListener('click', playAudio, { once: true });
+document.addEventListener('keydown', playAudio, { once: true });
+
+// Subaru Portrait Click Event (Pauses bg-music while playing theme)
 portrait.addEventListener("click", async () => {
   portrait.classList.add("playing");
   showToast("You truly are an amazing guy, Natsuki Subaru");
+
+  // Pause background music if playing
+  if (!bgMusic.paused) {
+    bgMusic.pause();
+  }
 
   try {
     theme.currentTime = 0;
@@ -83,29 +109,10 @@ portrait.addEventListener("click", async () => {
   window.setTimeout(() => portrait.classList.remove("playing"), 1600);
 });
 
-const audio = document.getElementById('bg-music');
-
-// Set volume (0.0 is silent, 1.0 is max; 0.15 is roughly 15% volume)
-audio.volume = 0.5;
-
-// Function to handle play attempt
-function playAudio() {
-  audio.play().then(() => {
-    // Autoplay started successfully
-    document.removeEventListener('click', playAudio);
-    document.removeEventListener('keydown', playAudio);
-  }).catch((error) => {
-    // Autoplay was blocked by the browser
-    console.log("Autoplay blocked. Waiting for user interaction.");
-  });
-}
-
-// Attempt to play immediately
-playAudio();
-
-// Fallback: If blocked, play as soon as the user clicks or presses a key anywhere
-document.addEventListener('click', playAudio, { once: true });
-document.addEventListener('keydown', playAudio, { once: true });
+// Resume background music when theme finishes playing
+theme.addEventListener("ended", () => {
+  bgMusic.play().catch(err => console.log(err));
+});
 
 function filterCards() {
   const query = document.getElementById('searchInput').value.toLowerCase();
@@ -123,11 +130,11 @@ function filterCards() {
 
 const castNav = document.querySelector('.cast-nav');
 
-castNav.addEventListener('wheel', (e) => {
-  // If the user is scrolling vertically, prevent default vertical scroll
-  // and scroll the container horizontally instead
-  if (e.deltaY !== 0) {
-    e.preventDefault();
-    castNav.scrollLeft += e.deltaY;
-  }
-}, { passive: false });
+if (castNav) {
+  castNav.addEventListener('wheel', (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      castNav.scrollLeft += e.deltaY;
+    }
+  }, { passive: false });
+}
