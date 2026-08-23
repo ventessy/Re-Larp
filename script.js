@@ -92,7 +92,7 @@ document.addEventListener('keydown', playAudio, { once: true });
 // Subaru Portrait Click Event (Pauses bg-music while playing theme)
 portrait.addEventListener("click", async () => {
   portrait.classList.add("playing");
-  showToast("You truly are an amazing guy, Natsuki Subaru");
+  showToast("Victory!");
 
   // Pause background music if playing
   if (!bgMusic.paused) {
